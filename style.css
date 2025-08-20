@@ -1,0 +1,95 @@
+body {
+​ ​ margin: 0;
+​ ​ font-family: 'Montserrat', Arial, sans-serif;
+​ ​ transition: background 0.3s, color 0.3s;
+​ ​ min-height: 100vh;
+}
+header {
+​ ​ display: flex;
+​ ​ justify-content: space-between;
+​ ​ align-items: center;
+​ ​ background: #1a1a1a;
+​ ​ padding: 20px 40px;
+}
+#logo {
+​ ​ height: 60px;
+}
+#theme-switcher {
+​ ​ background: transparent;
+​ ​ border: none;
+​ ​ font-size: 2em;
+​ ​ cursor: pointer;
+​ ​ color: #fff;
+​ ​ transition: color 0.2s;
+}
+main {
+​ ​ text-align: center;
+​ ​ padding: 60px 20px 40px 20px;
+}
+h1 {
+​ ​ font-size: 2.5em;
+​ ​ margin-bottom: 20px;
+​ ​ letter-spacing: 2px;
+}
+.cta-btn {
+​ ​ display: inline-block;
+​ ​ margin-top: 30px;
+​ ​ padding: 16px 38px;
+​ ​ background: #e63946;
+​ ​ color: #fff;
+​ ​ font-size: 1.2em;
+​ ​ text-decoration: none;
+​ ​ border-radius: 8px;
+​ ​ box-shadow: 0 0 10px #0004;
+​ ​ transition: background 0.2s;
+}
+.cta-btn:hover {
+​ ​ background: #b80e31;
+}
+footer {
+​ ​ text-align: center;
+​ ​ padding: 18px;
+​ ​ background: #1a1a1a;
+​ ​ color: #fff;
+​ ​ position: fixed;
+​ ​ width: 100%;
+​ ​ bottom: 0;
+​ ​ left: 0;
+}
+
+/* Theme: Light (default) */
+.theme-light {
+​ ​ background: #e5e5e5;
+​ ​ color: #1a1a1a;
+}
+.theme-light header,
+.theme-light footer {
+​ ​ background: #fff;
+​ ​ color: #1a1a1a;
+}
+.theme-light #theme-switcher {
+​ ​ color: #1a1a1a;
+}
+
+/* Theme: Dark / Mundo Invertido */
+.theme-dark {
+​ ​ background: #1a1a1a;
+​ ​ color: #e5e5e5;
+}
+.theme-dark header,
+.theme-dark footer {
+​ ​ background: #000;
+​ ​ color: #e5e5e5;
+}
+.theme-dark #theme-switcher {
+​ ​ color: #e63946;
+}
+.theme-dark .cta-btn {
+​ ​ background: #000;
+​ ​ color: #e63946;
+​ ​ border: 2px solid #e63946;
+}
+.theme-dark .cta-btn:hover {
+​ ​ background: #e63946;
+​ ​ color: #fff;
+}
